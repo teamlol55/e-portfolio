@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ธนกฤต เรืองเดช | e-Portfolio</title>
+  <meta name="description" content="แฟ้มสะสมผลงานออนไลน์ของ ธนกฤต เรืองเดช นักเรียนสาขาเทคโนโลยีสารสนเทศ โรงเรียนธัญรัตน์">
+
+  <!-- Favicon เป็น SVG ฝังในไฟล์ ไม่ต้องใช้ไฟล์รูปเพิ่ม -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23111'/%3E%3Ctext x='32' y='43' font-size='34' text-anchor='middle' fill='%23fff' font-family='sans-serif'%3E%E0%B8%98%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500&family=Noto+Serif+Thai:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="เมนูหลัก">
+      <a href="#home" class="brand" aria-label="กลับไปหน้าแรก">ธนกฤต</a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="เปิดเมนู">
+        <span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ 1. HOME ============ -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-hello">สวัสดีครับ ยินดีต้อนรับสู่แฟ้มสะสมผลงานของผม</p>
+          <h1 class="hero-name">
+            <span class="line"><span>ธนกฤต</span></span>
+            <span class="line"><span>เรืองเดช</span></span>
+          </h1>
+          <p class="hero-role">นักเรียนสาขาเทคโนโลยีสารสนเทศ · โรงเรียนธัญรัตน์</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-solid">ดูผลงาน</a>
+            <a href="#contact" class="btn btn-line">ติดต่อ</a>
+          </div>
+        </div>
+
+        <!-- รูปโปรไฟล์: วงกลมโมโนแกรมแบบ SVG (แสดงผลได้เสมอ)
+             หากต้องการใช้รูปจริง ดูวิธีเปลี่ยนใน README.md -->
+        <div class="avatar" id="avatar">
+          <svg viewBox="0 0 200 200" role="img" aria-label="ภาพตัวอักษร ธ แทนรูปโปรไฟล์">
+            <circle cx="100" cy="100" r="98" fill="#111"/>
+            <circle cx="100" cy="100" r="86" fill="none" stroke="#fff" stroke-opacity=".25"/>
+            <text x="100" y="133" text-anchor="middle" font-size="98" fill="#fff" font-family="'Noto Serif Thai', serif" font-weight="600">ธ</text>
+          </svg>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="เลื่อนลง"><span></span></a>
+    </section>
+
+    <!-- ============ 2. ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid reveal">
+          <div class="about-main">
+            <p>ผมชื่อ <strong>ธนกฤต เรืองเดช</strong> เป็นนักเรียนสาขาเทคโนโลยีสารสนเทศ โรงเรียนธัญรัตน์</p>
+            <p class="todo">[ใส่ประวัติส่วนตัวสั้น ๆ ของคุณที่นี่ เช่น เป้าหมาย แรงบันดาลใจ หรือสิ่งที่กำลังเรียนรู้]</p>
+          </div>
+          <dl class="facts">
+            <div><dt>ชื่อ</dt><dd>ธนกฤต เรืองเดช</dd></div>
+            <div><dt>โรงเรียน</dt><dd>ธัญรัตน์</dd></div>
+            <div><dt>สาขา</dt><dd>เทคโนโลยีสารสนเทศ</dd></div>
+            <div><dt>วันเกิด</dt><dd class="todo">[ใส่ข้อมูล หรือลบแถวนี้]</dd></div>
+          </dl>
+        </div>
+
+        <h3 class="sub-title">ความสนใจ</h3>
+        <ul class="chips reveal">
+          <li class="todo">[ความสนใจที่ 1]</li>
+          <li class="todo">[ความสนใจที่ 2]</li>
+          <li class="todo">[ความสนใจที่ 3]</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 3. EDUCATION ============ -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <span class="timeline-time">[ปีที่เข้าศึกษา – ปัจจุบัน]</span>
+            <h3>โรงเรียนธัญรัตน์</h3>
+            <p>สาขาเทคโนโลยีสารสนเทศ</p>
+            <p class="todo">[ระดับชั้น / แผนการเรียน / เกรดเฉลี่ย (ถ้าต้องการแสดง)]</p>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-time todo">[ปี – ปี]</span>
+            <h3 class="todo">[โรงเรียนหรือสถาบันก่อนหน้า]</h3>
+            <p class="todo">[ระดับการศึกษา] — คัดลอกบล็อกนี้เพิ่มได้ตามต้องการ</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 4. SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <ul class="skill-grid">
+          <li class="skill reveal"><h3>HTML</h3><p>โครงสร้างและเนื้อหาของหน้าเว็บ</p></li>
+          <li class="skill reveal"><h3>CSS</h3><p>การจัดวางและออกแบบหน้าตาเว็บไซต์</p></li>
+          <li class="skill reveal"><h3>JavaScript</h3><p>ทำให้หน้าเว็บโต้ตอบกับผู้ใช้ได้</p></li>
+          <li class="skill reveal todo"><h3>[ทักษะอื่น ๆ]</h3><p>[เช่น Git, Python, Canva, Office]</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 5. PROJECTS ============ -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <article class="project reveal">
+          <div class="project-thumb" aria-hidden="true">
+            <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+              <rect width="400" height="260" fill="#e9e9e9"/>
+              <rect x="40" y="36" width="320" height="188" rx="8" fill="#fff" stroke="#111" stroke-width="2"/>
+              <rect x="40" y="36" width="320" height="26" rx="8" fill="#111"/>
+              <circle cx="58" cy="49" r="4" fill="#fff"/><circle cx="72" cy="49" r="4" fill="#fff" opacity=".6"/><circle cx="86" cy="49" r="4" fill="#fff" opacity=".3"/>
+              <rect x="64" y="86" width="150" height="14" rx="3" fill="#111"/>
+              <rect x="64" y="112" width="240" height="8" rx="3" fill="#bbb"/>
+              <rect x="64" y="130" width="200" height="8" rx="3" fill="#bbb"/>
+              <rect x="64" y="166" width="70" height="24" rx="12" fill="#111"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <h3 class="todo">[ชื่อโครงงาน]</h3>
+            <p class="todo">[อธิบายโครงงาน: ทำเกี่ยวกับอะไร ใช้เทคโนโลยีอะไร และคุณรับผิดชอบส่วนไหน]</p>
+            <ul class="chips chips-small">
+              <li class="todo">[เทคโนโลยีที่ใช้]</li>
+            </ul>
+            <!-- เปลี่ยนลิงก์ด้านล่างเป็นลิงก์ repo ของโครงงานนี้ -->
+            <a class="btn btn-line" href="https://github.com/teamlol55" target="_blank" rel="noopener">ดูบน GitHub</a>
+          </div>
+        </article>
+
+        <!-- ต้องการเพิ่มโครงงาน: คัดลอก <article class="project reveal"> ... </article> ทั้งบล็อกไปวางต่อท้าย -->
+      </div>
+    </section>
+
+    <!-- ============ 6. CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-lead">สนใจพูดคุยหรือร่วมงานกัน ติดต่อได้ตามช่องทางด้านล่าง</p>
+        <ul class="contact-list reveal">
+          <li><span>อีเมล</span><a class="todo" href="mailto:your-email@example.com">[your-email@example.com]</a></li>
+          <li><span>GitHub</span><a href="https://github.com/teamlol55" target="_blank" rel="noopener">github.com/teamlol55</a></li>
+          <li><span>Facebook / IG / Line</span><span class="todo">[ใส่ลิงก์หรือไอดี หรือลบแถวนี้]</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 7. FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>จัดทำโดย ธนกฤต เรืองเดช · โรงเรียนธัญรัตน์ · สาขาเทคโนโลยีสารสนเทศ</p>
+      <p>© <span id="year">2026</span> ธนกฤต เรืองเดช สงวนลิขสิทธิ์</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
